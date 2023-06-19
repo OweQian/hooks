@@ -4,7 +4,10 @@ import dynamic from "next/dynamic";
 // const EffectExample = dynamic(() => import('@/app/components/effectExample'), { ssr: false});
 // const ContextExample = dynamic(() => import('@/app/components/contextExample'), { ssr: false});
 // const ReducerExample = dynamic(() => import('@/app/components/reducerExample'), { ssr: false});
-const MemoExample = dynamic(() => import('@/app/components/memoExample'), { ssr: false});
+// const MemoExample = dynamic(() => import('@/app/components/memoExample'), { ssr: false});
+// const CallbackExample = dynamic(() => import('@/app/components/callbackExample'), { ssr: false});
+// const RefExample = dynamic(() => import('@/app/components/refExample'), { ssr: false});
+const ImperativeHandleExample = dynamic(() => import('@/app/components/imperativeHandleExample'), { ssr: false});
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -12,7 +15,10 @@ export default function Home() {
       {/*<EffectExample />*/}
       {/*<ContextExample />*/}
       {/*<ReducerExample />*/}
-      <MemoExample />
+      {/*<MemoExample />*/}
+      {/*<CallbackExample />*/}
+      {/*<RefExample />*/}
+      <ImperativeHandleExample />
     </main>
   )
 }
