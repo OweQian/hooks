@@ -7,7 +7,10 @@ import dynamic from "next/dynamic";
 // const MemoExample = dynamic(() => import('@/app/components/memoExample'), { ssr: false});
 // const CallbackExample = dynamic(() => import('@/app/components/callbackExample'), { ssr: false});
 // const RefExample = dynamic(() => import('@/app/components/refExample'), { ssr: false});
-const ImperativeHandleExample = dynamic(() => import('@/app/components/imperativeHandleExample'), { ssr: false});
+// const ImperativeHandleExample = dynamic(() => import('@/app/components/imperativeHandleExample'), { ssr: false});
+// const LayoutExample = dynamic(() => import('@/app/components/layoutExample'), { ssr: false});
+// const UseLatestExample = dynamic(() => import('@/app/hookExample/useLatestExample'), { ssr: false});
+const UseMountAndUnmountExample = dynamic(() => import('@/app/hookExample/useMountAndUnmountExample'), { ssr: false});
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -18,7 +21,10 @@ export default function Home() {
       {/*<MemoExample />*/}
       {/*<CallbackExample />*/}
       {/*<RefExample />*/}
-      <ImperativeHandleExample />
+      {/*<ImperativeHandleExample />*/}
+      {/*<LayoutExample />*/}
+      {/*<UseLatestExample />*/}
+      <UseMountAndUnmountExample />
     </main>
   )
 }
