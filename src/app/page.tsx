@@ -11,7 +11,8 @@ import dynamic from "next/dynamic";
 // const LayoutExample = dynamic(() => import('@/app/components/layoutExample'), { ssr: false});
 // const UseLatestExample = dynamic(() => import('@/app/hookExample/useLatestExample'), { ssr: false});
 // const UseMountAndUnmountExample = dynamic(() => import('@/app/hookExample/useMountAndUnmountExample'), { ssr: false});
-const UseUnmountedRefExample = dynamic(() => import('@/app/hookExample/useUnmountedRefExample'), { ssr: false});
+// const UseUnmountedRefExample = dynamic(() => import('@/app/hookExample/useUnmountedRefExample'), { ssr: false});
+const UseUpdateExample = dynamic(() => import('@/app/hookExample/useUpdateExample'), { ssr: false});
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -26,7 +27,8 @@ export default function Home() {
       {/*<LayoutExample />*/}
       {/*<UseLatestExample />*/}
       {/*<UseMountAndUnmountExample />*/}
-      <UseUnmountedRefExample />
+      {/*<UseUnmountedRefExample />*/}
+      <UseUpdateExample />
     </main>
   )
 }
